@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    margin:0;
+    background-color:#272626
+
+}
+.container{
+    background-color: #f7d035f6;
+    padding:1rem;
+    border-radius: .5;
+    width:700px;
+    max-width: 90%;
+    border-radius: .5rem;
+
+    
+
+    
+}
+.timer{
+    position:absolute;
+    top:3rem;
+    font-size: 2rem;
+    color: #f7d035f6;
+    font-weight: bold;
+}
+.quote{
+    margin-bottom:1rem;
+    margin-left:.5rem;
+     margin-right:.5rem;
+     font-size: 1.5rem;
+     
+
+}
+#input{
+    background-color: transparent;
+    border:2px solid rgba(88, 3, 7, 0.884);
+    height: 8rem;
+    width: 100%;
+  margin: auto;
+  resize: none;
+  outline:none;
+  padding: .5rem .5rem;
+  font-size: 1.25rem;
+  border-radius: .5rem;
+}
+#input:focus{
+    border-color: black;
+}
+.correct{
+    color:rgba(8, 199, 8, 0.767);
+    text-decoration: underline;
+}
+.incorrect{
+    color:rgb(238, 11, 11);
+    text-decoration: underline;
+}
+.modal {
+    display: none;
+    position: fixed;
+    
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  #result{
+      color:#f7d035f6;
+      font-size: 1.25rem;
+  }
+  .modal-content {
+    background: rgb(19, 18, 18);
+    text-align: center;
+    color:#f7d035f6;
+    margin: 10% auto;
+    width: 350px;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+  }
+  
+
+  
+  .modal-content p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  .foot {
+    position: fixed;
+    font-size: large;
+    bottom: 0;
+    width: 100%;
+  
+    color: #f7d035f6;
+    text-align: center;
+  }
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
